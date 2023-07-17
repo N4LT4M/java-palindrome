@@ -1,2 +1,4 @@
-package org.java.palindrome;public class JavaPalindrome {
+package org.java.palindrome;
+
+public class JavaPalindrome {
 }
