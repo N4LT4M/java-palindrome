@@ -13,13 +13,16 @@ public class JavaPalindrome {
 
         Scanner scan = new Scanner(System.in);
         //chiedo all'utente una parola
-        String userWord;
+        String userWord;otto
         System.out.println("scrivi una parola e verificherò se è palindroma");
         userWord = scan.nextLine();
         //creo un array dalla parola dell'utente
-        char[] arrayUserWord = userWord.toCharArray();
+        char[] arrayUserWord = userWord.toCharArray();o,t,t,o
+        //creo un array vuoto lungo come arrayUserWord
+        char[] invertedWord = new char[arrayUserWord.length];
         //inverto la parola
         for (int i = arrayUserWord.length - 1; i >= 0 ; i--) {
+            if (arrayUserWord[i])
 
         }
 
