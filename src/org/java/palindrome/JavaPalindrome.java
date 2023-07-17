@@ -2,6 +2,7 @@ package org.java.palindrome;
 
 import java.util.Scanner;
 
+
 public class JavaPalindrome {
     public static void main(String[] args) {
         /*scrivere un programma che chiede all’utente di inserire una parola
@@ -11,19 +12,28 @@ public class JavaPalindrome {
          */
 
 
+
         Scanner scan = new Scanner(System.in);
         //chiedo all'utente una parola
-        String userWord;otto
+        String userWord;//otto
         System.out.println("scrivi una parola e verificherò se è palindroma");
         userWord = scan.nextLine();
         //creo un array dalla parola dell'utente
-        char[] arrayUserWord = userWord.toCharArray();o,t,t,o
+        char[] arrayUserWord = userWord.toCharArray();//o,t,t,o
         //creo un array vuoto lungo come arrayUserWord
-        char[] invertedWord = new char[arrayUserWord.length];
+        char[] arrayInvertedWord = new char[arrayUserWord.length];
         //inverto la parola
+        int a = 0;
         for (int i = arrayUserWord.length - 1; i >= 0 ; i--) {
-            if (arrayUserWord[i])
+           arrayInvertedWord[a] = arrayUserWord[i];
+           a++;
+        }
+        String invertedWord = String.valueOf(arrayInvertedWord);
 
+        if (invertedWord.equals(userWord)) {
+            System.out.println("la tua parola è palindroma");
+        } else {
+            System.out.println("la tua parola non è palindroma");
         }
 
 
