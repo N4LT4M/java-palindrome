@@ -35,14 +35,29 @@ public class JavaPalindrome {
         } else {
             System.out.println("la tua parola non è palindroma");
         }
+        scan.close();
 
+        //BONUS: nello stesso progetto aggiungere le classi per risolvere Snack8 e Snack9 che non abbiamo ancora corretto in classe
 
+        //Snack8
+        //Chiedi un numero di 4 cifre all’utente e calcola la somma di tutte le cifre che compongono il numero.
 
+        Scanner scanNumber = new Scanner(System.in);
+        //faccio inserire un numero di quattro cifre
+        System.out.println("inserisci un numero di quattro cifre e io sommerò quelle cifre");//1259
+        String userNumber = scanNumber.nextLine();
+        //divido il numero in un array composto dalle cifre del numero inserito
+        char[] arrayUserNumber = userNumber.toCharArray();
+        int somma = 0;
+        for (int i = 0; i < arrayUserNumber.length; i++) {
+           int number = arrayUserNumber[i] - '0';
 
+            somma = somma + number;
+        }
 
+        System.out.println("la somma delle cifre del numero inserito è; " + somma);
 
-
-
+        scanNumber.close();
 
 
     }
